@@ -9,4 +9,6 @@ assert find_unique_value([1, 2, 1, 1]) == 2, 'Test1'
 assert find_unique_value([2, 3, 3, 3, 5, 5]) == 2, 'Test2'
 assert find_unique_value([5, 5, 5, 2, 2, 0.5]) == 0.5, 'Test3'
 assert find_unique_value([5, 5, 5, 2, 2]) == None, 'Test4'
+assert find_unique_value([5]) == 5, 'Test5'
+assert find_unique_value([]) == None, 'Test6'
 print("ОК")
