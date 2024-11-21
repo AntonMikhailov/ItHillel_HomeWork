@@ -1,8 +1,8 @@
 from collections import Counter
 
 def find_unique_value(some_list):
-   list_of_doubles = [key for key, value in Counter(some_list).items() if value == 1]
-   return list_of_doubles[0] if len(list_of_doubles) > 0 else None
+   uniq_list = [key for key, value in Counter(some_list).items() if value == 1]
+   return uniq_list[0] if len(uniq_list) > 0 else None
 
 
 assert find_unique_value([1, 2, 1, 1]) == 2, 'Test1'
