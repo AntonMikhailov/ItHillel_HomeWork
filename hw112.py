@@ -1,5 +1,5 @@
 def generate_cube_numbers(end):
-    num=2
+    num = 2
     while end is None or num ** 3 <= end:
         yield num ** 3
         num += 1
