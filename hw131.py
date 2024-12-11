@@ -16,7 +16,8 @@ class Student(Human):
         self.record_book = record_book
 
     def __str__(self):
-        return f'Student: {self.first_name} {self.last_name}, {self.gender}, age: {self.age}, rec_book: {self.record_book}'
+        human_str = super().__str__()[8:]
+        return f'Student: {human_str}, rec_book: {self.record_book}'
 
 class Group:
 
